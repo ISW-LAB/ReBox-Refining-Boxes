@@ -11,7 +11,7 @@ The pipeline consists of 7 main components executed sequentially:
 | 0 | `0.Data_setting_(ultralytics).py` | Download datasets using Ultralytics |
 | 1 | `1.Data_check_and_noise_insection.py` | Inspect datasets and inject label noise |
 | 2 | `2.object_detection.ipynb` | Train baseline object detection models |
-| 3 | `3.1.Label_refinement_*_Final.ipynb` | Train ReBox label refinement model |
+| 3 | `3.Label_refinement_*_Final.ipynb` | Train ReBox label refinement model |
 | 4 | `4.SAM_model_label_refine.ipynb` | SAM-based label refinement (comparison) |
 | 5 | `5.refine_object_detection_*_Final.ipynb` | Train detection with refined labels |
 | 6 | `6.visualization_code.ipynb` | Visualize and analyze results |
@@ -178,7 +178,7 @@ TARGET_DATASETS = None  # None = all datasets
 
 ### Step 3: ReBox Label Refinement Training (Core)
 
-Open and run `3.1.Label_refinement_(uniform_scaling_boundary_jitter_noise_start=noise)-(n)_Final.ipynb`
+Open and run `3.Label_refinement_(uniform_scaling_boundary_jitter_noise_start=noise)-(n)_Final.ipynb`
 
 **What it does:**
 1. **Cell 1**: Dataset discovery and statistics
@@ -337,22 +337,6 @@ from noisy_insection import (
     JITTER_PATTERNS,     # [3, 4, 5, 6, 7]
 )
 ```
-
----
-
-## Citation
-
-If you use this code, please cite:
-
-```bibtex
-@article{label-refinement-2024,
-  title={Learning-based Label Refinement for Object Detection with Noisy Annotations},
-  author={Your Name},
-  year={2024}
-}
-```
-
----
 
 ## License
 
