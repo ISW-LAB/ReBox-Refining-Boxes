@@ -11,7 +11,7 @@
 ## Motivation
 
 <p align="center">
-  <img width="800" alt="Motivation" src="https://github.com/user-attachments/assets/37b2b05b-14b9-4eda-afd5-7a716244c5d3" />
+  <img width="400" alt="Motivation" src="https://github.com/user-attachments/assets/37b2b05b-14b9-4eda-afd5-7a716244c5d3" />
 </p>
 <p align="center"><b>Figure 1.</b> Common problems caused by noisy bounding box labels and improvements after refinement.</p>
 
@@ -28,7 +28,7 @@ Training with refined labels significantly reduces these issues, producing clean
 ## Proposed Method: ReBox
 
 <p align="center">
-  <img width="800" alt="ReBox" src="https://github.com/user-attachments/assets/322acc66-2940-442a-a5a3-741b5466bb56" />
+  <img width="600" alt="ReBox" src="https://github.com/user-attachments/assets/322acc66-2940-442a-a5a3-741b5466bb56" />
 </p>
 <p align="center"><b>Figure 2.</b> Overview of the ReBox label refinement pipeline.</p>
 
@@ -46,7 +46,7 @@ This approach effectively recovers accurate bounding boxes from various types of
 
 ## Experimental Results
 <p align="center">
-  <img width="800" alt="Qualitative Results" src="https://github.com/user-attachments/assets/6bf908c7-0124-4448-92b7-53031b354d99" />
+  <img width="400" alt="Qualitative Results" src="https://github.com/user-attachments/assets/6bf908c7-0124-4448-92b7-53031b354d99" />
 </p>
 <p align="center"><b>Figure 3.</b> Qualitative comparison of label refinement methods: (a) Original ground truth, (b) Noisy labels, (c) ReBox (Ours), (d) SAM.</p>
 
@@ -77,11 +77,15 @@ The pipeline consists of 7 main components executed sequentially:
 We evaluate our method on 9 diverse object detection datasets spanning various domains:
 
 <p align="center">
-  <img width="600" alt="Dataset Statistics" src="https://github.com/user-attachments/assets/969aa49e-9410-4dd7-9e2c-2dc2e5073c6b" />
+  <img width="400" alt="Dataset Statistics" src="https://github.com/user-attachments/assets/969aa49e-9410-4dd7-9e2c-2dc2e5073c6b" />
 </p>
 <p align="center"><b>Table 1.</b> Dataset statistics used in our experiments.</p>
 
 The datasets cover a wide range of applications including autonomous driving (PASCAL VOC, Kitti), household objects (Home-objects), construction sites, wildlife, medical imaging (Brain-tumor, BCCD, Medical-pills), and document analysis (Signature).
+
+**Dataset Sources:**
+- **BCCD**: Available at [Kaggle BCCD Dataset](https://www.kaggle.com/datasets/konstantinazov/bccd-dataset)
+- **All other datasets**: Available through [Ultralytics Datasets](https://docs.ultralytics.com/datasets/)
 
 ---
 
